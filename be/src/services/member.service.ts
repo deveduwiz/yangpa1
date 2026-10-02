@@ -21,7 +21,7 @@ export const signIn = async ({ email, password }: SignInDto): Promise<string> =>
   const user = await User.findOne({ where: { email } });
 
   if (!user) {
-    const error: AppError = new Error('존재하지 않는 이메일 입니다.');
+    const error: AppError = new Error('존재하지 않는 이메일 입니다.!');
     error.status = 404;
     throw error;
   }
