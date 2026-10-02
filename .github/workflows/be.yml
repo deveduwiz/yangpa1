@@ -54,6 +54,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'be-yangpa1'
-          slot-name: 'staging'
+          slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.BE_PROFILE }}
